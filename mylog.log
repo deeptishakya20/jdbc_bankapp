@@ -1,0 +1,40 @@
+2019-23-27 12:23:39 -0 - [main] ERROR com.capgemini.bank.client.BankAccountClient  - Exception
+com.capgemini.bank.exception.LowBalanceException: You do not have sufficient fund...
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:41)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:70)
+2019-18-28 11:18:39 -1 - [main] ERROR com.capgemini.bank.util.DbUtil  - SQLException
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Connection.close() has already been called. Invalid operation in this state.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.getMutex(ConnectionImpl.java:3015)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1521)
+	at com.capgemini.bank.util.DbUtil.commmit(DbUtil.java:36)
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.updateAccountDetails(BankAccountServiceImpl.java:147)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:143)
+2019-43-28 18:43:45 -1 - [main] ERROR com.capgemini.bank.client.BankAccountClient  - Exception
+com.capgemini.bank.exception.BankAccountNotFoundException: You have entered incorrect account details..
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.searchBankAccount(BankAccountServiceImpl.java:140)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:134)
+2019-45-28 18:45:17 -0 - [main] ERROR com.capgemini.bank.service.impl.BankAccountServiceImpl  - Exception
+com.capgemini.bank.exception.BankAccountNotFoundException: You have entered incorrect account details..
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.searchBankAccount(BankAccountServiceImpl.java:141)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:134)
+2019-45-28 18:45:17 -5 - [main] ERROR com.capgemini.bank.client.BankAccountClient  - Exception
+com.capgemini.bank.exception.BankAccountNotFoundException: You have entered incorrect account details..
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.searchBankAccount(BankAccountServiceImpl.java:141)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:134)
+2019-47-28 18:47:14 -1 - [main] ERROR com.capgemini.bank.service.impl.BankAccountServiceImpl  - Exception
+com.capgemini.bank.exception.BankAccountNotFoundException: You have entered incorrect account details..
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.searchBankAccount(BankAccountServiceImpl.java:141)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:134)
+2019-47-28 18:47:14 -3 - [main] ERROR com.capgemini.bank.client.BankAccountClient  - Exception
+com.capgemini.bank.exception.BankAccountNotFoundException: You have entered incorrect account details..
+	at com.capgemini.bank.service.impl.BankAccountServiceImpl.searchBankAccount(BankAccountServiceImpl.java:141)
+	at com.capgemini.bank.client.BankAccountClient.main(BankAccountClient.java:134)
